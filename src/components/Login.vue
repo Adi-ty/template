@@ -1,7 +1,20 @@
+<script lang="ts">
+const imageUrl = new URL(`/src/assets/Group 35699.svg`, import.meta.url).href
+export default {
+  name: "Login",
+  data() {
+    return {
+      imageUrl,
+    };
+  },
+};
+</script>
+
 <template>
     <div class="flex">
       <div class="w-3/5 bg-cover bg-center">
-        <img src="..\assets\Group 35699.svg" alt="login" class="h-screen w-full object-cover" />
+        <img :src="imageUrl" alt="loginImg" class="h-screen w-full object-cover" />
+        <!-- <img src="../assets/Group 35699.svg" alt="loginImg" class="h-screen w-full object-cover" /> -->
       </div>
       <div class="w-2/5 flex items-center justify-center">
         <form class="w-96">
@@ -16,7 +29,10 @@
             />
           </div>
           <div class="mb-8">
-            <label for="password" class="block text-black font-bold mb-2">Password<span class="text-red">*</span></label>
+            <label for="password" class="flex space-x-40 text-black font-bold mb-2">
+              Password<span class="text-red">*</span>
+              <p class="text-red">Forgot Password?</p>
+            </label>
             <input
               id="password"
               type="password"
