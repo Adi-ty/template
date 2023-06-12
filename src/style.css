@@ -1,0 +1,10 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body{
+  background-image: url('.\assets\Mask Group 4.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
