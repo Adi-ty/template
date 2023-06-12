@@ -2,7 +2,8 @@
 </script>
 
 <template>
-    <header class="fixed top-67 left-0 right-0 mx-auto w-85 max-w-screen-lg text-white">
+  <div class="fixed home-container left-0 right-0">
+    <header class="fixed top-67 left-0 right-0 mx-auto max-w-screen-lg text-white">
       <nav class="flex justify-between items-center h-14 px-4">
         <div class="flex items-center">
           <span class="font-bold text-3xl">Logo</span>
@@ -13,7 +14,9 @@
           <a href="#" class="nav-link text-lg">Case Studies</a>
           <a href="#" class="nav-link text-lg">Testimonials</a>
           <a href="#" class="nav-link text-lg">Contact</a>
-          <button class="bg-white hover:bg-white text-black font-bold py-4 px-14 rounded-lg">Login</button>
+          <router-link to="/login">
+            <button class="bg-white hover:bg-white text-black font-bold py-4 px-14 rounded-lg">Login</button>
+          </router-link>
         </div>
       </nav>
     </header>
@@ -26,6 +29,7 @@
       </div>
     </div>
     </main>
+  </div>
   </template>
   
   <script>
@@ -46,12 +50,12 @@
     top: 67px;
   }
 }
-
-/* template{
-  background-image: url('.\assets\Mask Group 4.svg');
+.home-container{
+  background-image: url('../assets/Mask Group 4.svg');
   background-repeat: no-repeat;
   background-size: cover;
-} */
+  height: 100vh;
+}
 .hero {
     margin-top: 226px;
     /* Add any additional styles or overrides here */

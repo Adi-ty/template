@@ -25,12 +25,15 @@
             />
           </div>
           <div class="flex justify-center">
-            <button
-              type="submit"
-              class="w-48 h-16 px-8 py-2 rounded-full text-blue text-xl border border-blue"
-            >
-              Login >>
-            </button>
+            <router-link to="/dashboard">
+              <button
+                type="submit"
+                class="w-48 h-16 px-8 py-2 rounded-full text-blue text-xl border border-blue"
+              >
+                Login >>
+              </button>
+            </router-link>
+            
           </div>
         </form>
       </div>
