@@ -41,6 +41,5 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  overflow-y: auto;
 }
 </style>
